@@ -174,7 +174,7 @@ Build and run example
 ```
 mvn clean package
 unzip examples/app/target/app-0.0.3-SNAPSHOT-bin.zip
-./app-0.0.3-SNAPSHOT/start.bat
+./app-0.0.3-SNAPSHOT/start
 ```
 
 
