@@ -12,6 +12,7 @@
             <filtered>true</filtered>
             <includes>
                 <include>start.bat</include>
+                <include>start</include>
             </includes>
         </fileSet>
         <fileSet>

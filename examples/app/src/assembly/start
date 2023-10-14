@@ -1,0 +1,2 @@
+#!/bin/zsh
+java -classpath "$(dirname $0)/lib/*" ljpf.examples.app.App
