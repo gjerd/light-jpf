@@ -39,3 +39,10 @@ https://pf4j.org/
 https://github.com/pf4j/pf4j/tree/master/demo_gradle
 https://github.com/pf4j/pf4j-update
 ```
+
+# MAVEN REPOS
+
+```
+https://github.com/dzikoysk/reposilite
+https://github.com/PerfectDreams/YetAnotherSimpleMavenRepo
+```
