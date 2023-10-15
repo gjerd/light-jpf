@@ -176,11 +176,11 @@ mvn clean package
 Should result in the following output:
 
 09:28:13.087 [main] INFO  App - Initializing...
-09:28:13.089 [main] WARN  DirPluginRepository - Dir Plugin Repository not found /home/hectic/IdeaProjects_SPADES_3/new/light-jpf/plugins
-09:28:13.090 [main] DEBUG DirPluginRepository - Loading plugins from directory: /home/hectic/IdeaProjects_SPADES_3/new/light-jpf/examples/app/target/plugins
-09:28:13.094 [main] DEBUG BasePluginRepository - Plugin added: SecondPlugin /home/hectic/IdeaProjects_SPADES_3/new/light-jpf/examples/app/target/plugins/second-plugin
-09:28:13.094 [main] DEBUG BasePluginRepository - Plugin added: FirstPlugin /home/hectic/IdeaProjects_SPADES_3/new/light-jpf/examples/app/target/plugins/first-plugin
-09:28:13.094 [main] DEBUG BasePluginRepository - Plugin added: ThirdPlugin /home/hectic/IdeaProjects_SPADES_3/new/light-jpf/examples/app/target/plugins/third-plugin
+09:28:13.089 [main] WARN  DirPluginRepository - Dir Plugin Repository not found /home/user/Sources/light-jpf/plugins
+09:28:13.090 [main] DEBUG DirPluginRepository - Loading plugins from directory: /home/user/Sources/light-jpf/examples/app/target/plugins
+09:28:13.094 [main] DEBUG BasePluginRepository - Plugin added: SecondPlugin /home/user/Sources/light-jpf/examples/app/target/plugins/second-plugin
+09:28:13.094 [main] DEBUG BasePluginRepository - Plugin added: FirstPlugin /home/user/Sources/light-jpf/examples/app/target/plugins/first-plugin
+09:28:13.094 [main] DEBUG BasePluginRepository - Plugin added: ThirdPlugin /home/user/Sources/light-jpf/examples/app/target/plugins/third-plugin
 09:28:13.098 [main] DEBUG FirstPlugin - Load [classloader ljpf.loader.ParentLastClassLoaderFactory$ParentLastClassLoader@18eed359]
 09:28:13.098 [main] INFO  FirstPlugin - Spring version 5.2.19.RELEASE
 09:28:13.098 [main] DEBUG DefaultPluginManager - Plugin Loaded: Plugin{id='FirstPlugin', version=0.0.8-SNAPSHOT}
