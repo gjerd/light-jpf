@@ -248,7 +248,7 @@ on the way - yay!
 
 
 ## 6. Licence
-Copyright 2017-2023 Arild G. Gjerd, Luke Sosnicki
+Copyright 2017 Luke Sosnicki, 2023- Arild G. Gjerd
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
