@@ -140,7 +140,8 @@ TODO Loads plugins from java classpath
 #### MultiPluginRepository
 TODO Enables mixing multiple plugin reposiotories
 
-
+#### Update light-jpf-maven-plugin to use maven-assembly-plugin & maven-dependency-plugin version 3.6.0
+TODO
 
 ## 4. Debugging
 In app create plugins dir and run or place plugins as dependencies
