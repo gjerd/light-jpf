@@ -2,6 +2,10 @@
 ![Release](https://badgen.net/badge/Release/0.0.8-SNAPSHOT/blue)
 [![License](https://badgen.net/badge/License/Apache&nbsp;2.0/blue)](https://opensource.org/licenses/Apache-2.0)
 
+## 0. Companion project for gradle
+    https://github.com/gjerd/lightweight-plugin-framework-gradle
+
+
 ## 1. Features
 - Simple api
 - Sandboxing with custom java classloader
