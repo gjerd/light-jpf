@@ -3,7 +3,7 @@
     <parent>
         <artifactId>examples</artifactId>
         <groupId>org.javacentric.gjerd</groupId>
-        <version>0.0.7-SNAPSHOT</version>
+        <version>0.0.8-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -47,7 +47,7 @@
             <plugin>
                 <groupId>org.javacentric.gjerd</groupId>
                 <artifactId>light-jpf-maven-plugin</artifactId>
-                <version>0.0.7-SNAPSHOT</version>
+                <version>0.0.8-SNAPSHOT</version>
                 <executions>
                     <execution>
                         <phase>process-sources</phase>
