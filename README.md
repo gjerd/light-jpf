@@ -1,7 +1,4 @@
-# Lightweight Java Plugin Framework
-
-# This is a fork
-
+# Lightweight Java Plugin Framework (Fork)
 ![Release](https://badgen.net/badge/Release/0.0.8-SNAPSHOT/blue)
 [![License](https://badgen.net/badge/License/Apache&nbsp;2.0/blue)](https://opensource.org/licenses/Apache-2.0)
 
@@ -76,7 +73,7 @@ Maven will create fat jar with plugin code and all its dependencies.
             <plugin>
                 <groupId>org.javacentric.gjerd</groupId>
                 <artifactId>light-jpf-maven-plugin</artifactId>
-                <version>0.0.2</version>
+                <version>0.0.8-SNAPSHOT</version>
                 <executions>
                     <execution>
                         <phase>package</phase>
@@ -102,7 +99,7 @@ light-jpf-maven-plugin can also prepare plugins/ directory in your application.
             <plugin>
                 <groupId>org.javacentric.gjerd</groupId>
                 <artifactId>light-jpf-maven-plugin</artifactId>
-                <version>0.0.2</version>
+                <version>0.0.8-SNAPSHOT</version>
                 <executions>
                     <execution>
                         <phase>process-sources</phase>
@@ -153,7 +150,7 @@ In app create plugins dir and run or place plugins as dependencies
         <dependency>
             <groupId>ljpf.examples.plugin</groupId>
             <artifactId>custom-plugin</artifactId>
-            <version>0.0.1</version>
+            <version>0.0.8-SNAPSHOT</version>
         </dependency>
         ...
         
