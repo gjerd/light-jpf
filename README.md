@@ -175,6 +175,42 @@ mvn clean package
 
 Should result in the following output:
 
+app-0.0.8-SNAPSHOT
+├── config
+│   └── logback.xml
+├── lib
+│   ├── app-0.0.8-SNAPSHOT.jar
+│   ├── common-api-0.0.8-SNAPSHOT.jar
+│   ├── commons-lang3-3.5.jar
+│   ├── light-jpf-0.0.8-SNAPSHOT.jar
+│   ├── logback-classic-1.2.9.jar
+│   ├── logback-core-1.2.9.jar
+│   └── slf4j-api-1.7.25.jar
+├── plugins
+│   ├── first-plugin
+│   │   ├── first.plugin
+│   │   └── lib
+│   │       ├── first-plugin-0.0.8-SNAPSHOT.jar
+│   │       ├── spring-core-5.2.19.RELEASE.jar
+│   │       └── spring-jcl-5.2.19.RELEASE.jar
+│   ├── META-INF
+│   │   └── MANIFEST.MF
+│   ├── second-plugin
+│   │   ├── lib
+│   │   │   ├── second-plugin-0.0.8-SNAPSHOT.jar
+│   │   │   ├── spring-core-5.2.19.RELEASE.jar
+│   │   │   └── spring-jcl-5.2.19.RELEASE.jar
+│   │   └── second.plugin
+│   └── third-plugin
+│       ├── additional.properties
+│       ├── lib
+│       │   └── third-plugin-0.0.8-SNAPSHOT.jar
+│       └── third.plugin
+├── start
+└── start.bat
+
+11 directories, 22 files
+
 09:28:13.087 [main] INFO  App - Initializing...
 09:28:13.089 [main] WARN  DirPluginRepository - Dir Plugin Repository not found /home/user/Sources/light-jpf/plugins
 09:28:13.090 [main] DEBUG DirPluginRepository - Loading plugins from directory: /home/user/Sources/light-jpf/examples/app/target/plugins
