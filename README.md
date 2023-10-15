@@ -1,4 +1,4 @@
-# Lightweight Java Plugin Framework (Fork)
+# Light Java Plugin Framework (Fork)
 ![Release](https://badgen.net/badge/Release/0.0.8-SNAPSHOT/blue)
 [![License](https://badgen.net/badge/License/Apache&nbsp;2.0/blue)](https://opensource.org/licenses/Apache-2.0)
 
@@ -234,7 +234,7 @@ app-0.0.8-SNAPSHOT
 -------------------------------
 
 As a sidenote here the java command to run the app, do not include the
-plugin-jars, as you can see they are dynamically loaded, so the program does it's job and
+plugins, as you can see they are dynamically loaded, so the program does it's job and
 works as expected. - The individual plugins can also use different libs/dependencies.
 
 java -classpath "$(dirname $0)/lib/*" ljpf.examples.app.App
@@ -242,7 +242,7 @@ java -classpath "$(dirname $0)/lib/*" ljpf.examples.app.App
 eg. it loads and resolves all jars inside the lib directory;
 (yes, the app's jar itself is there too, when it's done the apps class containing the main
 method is executed) - The main program loads the plugins dynamically, executing them
-on the way - yay!
+the way the main program want - yay!
  
 ```
 
