@@ -234,9 +234,9 @@ app-0.0.8-SNAPSHOT
 
 -------------------------------
 
-As a sidenote here the java command to run the app, do not include the
-plugins, as you can see they are dynamically loaded, so the program does it's job and
-works as expected. - The individual plugins can also use different libs/dependencies.
+The java command to run the app, do not include the plugins, as you can see they are
+dynamically loaded, so the program does it's job and works as expected.
+- The individual plugins can also use different libs/dependencies.
 
 java -classpath "$(dirname $0)/lib/*" ljpf.examples.app.App
 
