@@ -171,10 +171,8 @@ Build and run example
 
 ```
 mvn clean package
-unzip examples/app/target/app-0.0.3-SNAPSHOT-bin.zip
-./app-0.0.3-SNAPSHOT/start
+./run
 ```
-
 
 ## 6. Licence
 Copyright 2017 Luke Sosnicki
