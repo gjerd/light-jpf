@@ -7,7 +7,6 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.javacentric.gjerd</groupId>
     <artifactId>first-plugin</artifactId>
 
     <properties>
@@ -24,7 +23,7 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
-            <version>4.3.7.RELEASE</version>
+            <version>5.2.19.RELEASE</version>
         </dependency>
     </dependencies>
 
