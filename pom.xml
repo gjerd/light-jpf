@@ -2,13 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.javacentric.gjerd</groupId>
-    <artifactId>light-jpf-parent</artifactId>
+    <artifactId>lightweight-plugin-framework-parent</artifactId>
     <version>0.0.8-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>light-jpf-parent</name>
+    <name>lightweight-plugin-framework-parent</name>
     <description>Lightweight Java Plugin Framework</description>
-    <url>https://github.com/gjerd/light-jpf</url>
+    <url>https://github.com/gjerd/lightweight-plugin-framework</url>
 
     <licenses>
         <license>
@@ -19,8 +19,8 @@
     </licenses>
 
     <modules>
-        <module>light-jpf</module>
-        <module>light-jpf-maven-plugin</module>
+        <module>lightweight-plugin-framework</module>
+        <module>lightweight-plugin-framework-maven-plugin</module>
         <module>examples</module>
     </modules>
 
@@ -106,9 +106,9 @@
     </profiles>
 
     <scm>
-        <connection>scm:git:git://github.com/gjerd/light-jpf.git</connection>
-        <developerConnection>scm:git:git@github.com:gjerd/light-jpf.git</developerConnection>
-        <url>http://github.com/gjerd/light-jpf/tree/master</url>
+        <connection>scm:git:git://github.com/gjerd/lightweight-plugin-framework.git</connection>
+        <developerConnection>scm:git:git@github.com:gjerd/lightweight-plugin-framework.git</developerConnection>
+        <url>http://github.com/gjerd/lightweight-plugin-framework/tree/master</url>
         <tag>HEAD</tag>
     </scm>
 

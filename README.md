@@ -64,7 +64,7 @@ public class App {
 
 #### Build plugin with Maven
 
-Use light-jpf-maven-plugin to create maven artifact (*-plugin.jar).
+Use lightweight-plugin-framework-maven-plugin to create maven artifact (*-plugin.jar).
 Maven will create fat jar with plugin code and all its dependencies. 
 
 ```xml
@@ -72,7 +72,7 @@ Maven will create fat jar with plugin code and all its dependencies.
         <plugins>
             <plugin>
                 <groupId>org.javacentric.gjerd</groupId>
-                <artifactId>light-jpf-maven-plugin</artifactId>
+                <artifactId>lightweight-plugin-framework-maven-plugin</artifactId>
                 <version>0.0.8-SNAPSHOT</version>
                 <executions>
                     <execution>
@@ -91,14 +91,14 @@ Maven will create fat jar with plugin code and all its dependencies.
 
 #### Add plugins to app
 
-light-jpf-maven-plugin can also prepare plugins/ directory in your application.
+lightweight-plugin-framework-maven-plugin can also prepare plugins/ directory in your application.
 
 ```xml
     <build>
         <plugins>
             <plugin>
                 <groupId>org.javacentric.gjerd</groupId>
-                <artifactId>light-jpf-maven-plugin</artifactId>
+                <artifactId>lightweight-plugin-framework-maven-plugin</artifactId>
                 <version>0.0.8-SNAPSHOT</version>
                 <executions>
                     <execution>
@@ -140,7 +140,7 @@ TODO Loads plugins from java classpath
 #### MultiPluginRepository
 TODO Enables mixing multiple plugin reposiotories
 
-#### Update light-jpf-maven-plugin to use maven-assembly-plugin & maven-dependency-plugin version 3.6.0
+#### Update lightweight-plugin-framework-maven-plugin to use maven-assembly-plugin & maven-dependency-plugin version 3.6.0
 TODO
 
 ## 4. Debugging
@@ -161,7 +161,7 @@ In app create plugins dir and run or place plugins as dependencies
 
 
 ## 5. Examples
-See example project [here](https://github.com/souzen/light-jpf/tree/master/examples)
+See example project [here](https://github.com/souzen/lightweight-plugin-framework/tree/master/examples)
 
 Build and run example
 
@@ -178,7 +178,7 @@ app-0.0.8-SNAPSHOT
 │   ├── app-0.0.8-SNAPSHOT.jar
 │   ├── common-api-0.0.8-SNAPSHOT.jar
 │   ├── commons-lang3-3.5.jar
-│   ├── light-jpf-0.0.8-SNAPSHOT.jar
+│   ├── lightweight-plugin-framework-0.0.8-SNAPSHOT.jar
 │   ├── logback-classic-1.2.9.jar
 │   ├── logback-core-1.2.9.jar
 │   └── slf4j-api-1.7.25.jar
@@ -208,11 +208,11 @@ app-0.0.8-SNAPSHOT
 11 directories, 22 files
 
 09:28:13.087 [main] INFO  App - Initializing...
-09:28:13.089 [main] WARN  DirPluginRepository - Dir Plugin Repository not found /home/user/Sources/light-jpf/plugins
-09:28:13.090 [main] DEBUG DirPluginRepository - Loading plugins from directory: /home/user/Sources/light-jpf/examples/app/target/plugins
-09:28:13.094 [main] DEBUG BasePluginRepository - Plugin added: SecondPlugin /home/user/Sources/light-jpf/examples/app/target/plugins/second-plugin
-09:28:13.094 [main] DEBUG BasePluginRepository - Plugin added: FirstPlugin /home/user/Sources/light-jpf/examples/app/target/plugins/first-plugin
-09:28:13.094 [main] DEBUG BasePluginRepository - Plugin added: ThirdPlugin /home/user/Sources/light-jpf/examples/app/target/plugins/third-plugin
+09:28:13.089 [main] WARN  DirPluginRepository - Dir Plugin Repository not found /home/user/Sources/lightweight-plugin-framework/plugins
+09:28:13.090 [main] DEBUG DirPluginRepository - Loading plugins from directory: /home/user/Sources/lightweight-plugin-framework/examples/app/target/plugins
+09:28:13.094 [main] DEBUG BasePluginRepository - Plugin added: SecondPlugin /home/user/Sources/lightweight-plugin-framework/examples/app/target/plugins/second-plugin
+09:28:13.094 [main] DEBUG BasePluginRepository - Plugin added: FirstPlugin /home/user/Sources/lightweight-plugin-framework/examples/app/target/plugins/first-plugin
+09:28:13.094 [main] DEBUG BasePluginRepository - Plugin added: ThirdPlugin /home/user/Sources/lightweight-plugin-framework/examples/app/target/plugins/third-plugin
 09:28:13.098 [main] DEBUG FirstPlugin - Load [classloader ljpf.loader.ParentLastClassLoaderFactory$ParentLastClassLoader@18eed359]
 09:28:13.098 [main] INFO  FirstPlugin - Spring version 5.2.19.RELEASE
 09:28:13.098 [main] DEBUG DefaultPluginManager - Plugin Loaded: Plugin{id='FirstPlugin', version=0.0.8-SNAPSHOT}

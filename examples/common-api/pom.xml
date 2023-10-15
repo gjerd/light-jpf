@@ -12,7 +12,7 @@
     <dependencies>
         <dependency>
             <groupId>org.javacentric.gjerd</groupId>
-            <artifactId>light-jpf</artifactId>
+            <artifactId>lightweight-plugin-framework</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>

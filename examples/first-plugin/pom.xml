@@ -31,7 +31,7 @@
         <plugins>
             <plugin>
                 <groupId>org.javacentric.gjerd</groupId>
-                <artifactId>light-jpf-maven-plugin</artifactId>
+                <artifactId>lightweight-plugin-framework-maven-plugin</artifactId>
                 <version>0.0.8-SNAPSHOT</version>
                 <executions>
                     <execution>
