@@ -16,7 +16,7 @@
 
 package ljpf.maven;
 
-import com.google.inject.internal.util.Lists;
+import com.google.inject.internal.Lists;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;
 import org.apache.maven.plugins.annotations.Component;
