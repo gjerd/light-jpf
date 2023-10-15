@@ -27,9 +27,17 @@ https://github.com/hdecarne-github/gradle-java-plugin
 
 https://hdecarne-github.github.io/gradle-java-plugin/
 
+MAVEN FROM GRADLE:
+
+https://stackoverflow.com/questions/60138063/how-to-run-mvn-command-from-gradle-task
+https://maven.apache.org/ref/3.1.0/maven-embedder/index.html
+
+
 OFF TOPIC:
 https://www.flavours.dev/
 https://github.com/flavours/fam-gradle-plugin
+
+
 ```
 
 ## PF4J
