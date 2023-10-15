@@ -25,12 +25,10 @@ public class CustomPlugin implements Plugin {
 
     @Override
     public void load() {
-        ...
     }
 
     @Override
     public void unload() {
-        ...
     }
 }
 ```
