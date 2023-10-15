@@ -41,6 +41,7 @@ https://plugins.gradle.org/plugin/de.benediktritter.maven-plugin-development
 
 https://help.liferay.com/hc/en-us/articles/360017901692-Maven-Plugin-Builder-Gradle-Plugin
 https://plugins.gradle.org/plugin/com.liferay.maven.plugin.builder
+https://github.com/liferay/liferay-portal/tree/master/modules/sdk/gradle-plugins-maven-plugin-builder
 
 
 --
