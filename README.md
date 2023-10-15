@@ -234,7 +234,22 @@ app-0.0.8-SNAPSHOT
 09:28:13.102 [main] DEBUG DefaultPluginManager - Plugin Unloaded: Plugin{id='SecondPlugin', version=0.0.8-SNAPSHOT}
 09:28:13.102 [main] INFO  ThirdPlugin - Unload
 09:28:13.102 [main] DEBUG DefaultPluginManager - Plugin Unloaded: Plugin{id='ThirdPlugin', version=0.0.8-SNAPSHOT}
+
+-------------------------------
+
+As a sidenote here the java command to run the app, do not include the
+plugins' jars, as you can see they are dynamically loaded, so the program does it's job and
+works as expected.
+
+java -classpath "$(dirname $0)/lib/*" ljpf.examples.app.App
+
+eg. it runs and loads and resolves all jars inside the lib directory;
+(yes, the app's jar itself is there too, when it's done the apps class containing the main
+method is executed)
+ 
 ```
+
+
 
 ## 6. Licence
 Copyright 2017-2023 Arild G. Gjerd, Luke Sosnicki
