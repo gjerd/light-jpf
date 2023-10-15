@@ -3,10 +3,12 @@
 rm -rf app-0.0.8-SNAPSHOT
 unzip -qq examples/app/target/app-0.0.8-SNAPSHOT-bin.zip
 
+echo
+
 if [ "$*" == "tree" ]; then
   tree app-0.0.8-SNAPSHOT
   echo
 fi
 
 ./app-0.0.8-SNAPSHOT/start
-
+echo
