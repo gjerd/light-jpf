@@ -7,7 +7,6 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.javacentric.gjerd</groupId>
     <artifactId>third-plugin</artifactId>
 
     <dependencies>
