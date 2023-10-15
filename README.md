@@ -147,16 +147,16 @@ TODO Enables mixing multiple plugin reposiotories
 #### Update lightweight-plugin-framework-maven-plugin to use maven-assembly-plugin & maven-dependency-plugin version 3.6.0
 TODO
 
-## 4. Debugging
-In app create plugins dir and run or place plugins as dependencies
-
-
-
-## 5. Roadmap
+## 4. Roadmap
 
 - [x] Updated all maven dependencies, not maven-assembly-plugin & maven-dependency-plugin
 - [ ] Make a fully working Gradle Example utilizing this framework
 - [ ] Make a Gradle plugin for distributing plugins
+
+
+
+## 5. Debugging
+In app create plugins dir and run or place plugins as dependencies
 
 ```xml
     <dependencies>
@@ -169,7 +169,6 @@ In app create plugins dir and run or place plugins as dependencies
         
     </dependencies>
 ```
-
 
 
 ## 6. Examples
