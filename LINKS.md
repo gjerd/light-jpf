@@ -29,9 +29,23 @@ https://hdecarne-github.github.io/gradle-java-plugin/
 
 MAVEN FROM GRADLE:
 
-https://stackoverflow.com/questions/60138063/how-to-run-mvn-command-from-gradle-task
-https://maven.apache.org/ref/3.1.0/maven-embedder/index.html
+* LATEST *
+https://maven.apache.org/ref/3.9.5/maven-embedder/index.html
+https://maven.apache.org/shared/maven-invoker/index.html
 
+https://dzone.com/articles/embedding-maven
+https://stackoverflow.com/questions/4206679/can-anyone-give-a-good-example-of-using-org-apache-maven-cli-mavencli-programmat
+
+https://www.benediktritter.de/maven-plugin-development/
+https://plugins.gradle.org/plugin/de.benediktritter.maven-plugin-development
+
+https://help.liferay.com/hc/en-us/articles/360017901692-Maven-Plugin-Builder-Gradle-Plugin
+https://plugins.gradle.org/plugin/com.liferay.maven.plugin.builder
+
+
+--
+
+https://stackoverflow.com/questions/60138063/how-to-run-mvn-command-from-gradle-task
 
 OFF TOPIC:
 https://www.flavours.dev/
