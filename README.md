@@ -2,10 +2,8 @@
 
 # This is a fork
 
-[![Maven Central](https://img.shields.io/maven-central/v/org.javacentric.gjerd/light-jpf.svg)](http://search.maven.org/#search|ga|1|light-jpf)
-[![Travis](https://img.shields.io/travis/rust-lang/rust.svg)](https://travis-ci.org/souzen/light-jpf)
-
-
+![Release](https://badgen.net/badge/Release/0.0.8-SNAPSHOT/blue)
+[![License](https://badgen.net/badge/License/Apache&nbsp;2.0/blue)](https://opensource.org/licenses/Apache-2.0)
 
 ## 1. Features
 - Simple api
