@@ -2,7 +2,7 @@
 
 # This is a fork
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.github.souzen/light-jpf.svg)](http://search.maven.org/#search|ga|1|light-jpf)
+[![Maven Central](https://img.shields.io/maven-central/v/org.javacentric.gjerd/light-jpf.svg)](http://search.maven.org/#search|ga|1|light-jpf)
 [![Travis](https://img.shields.io/travis/rust-lang/rust.svg)](https://travis-ci.org/souzen/light-jpf)
 
 
@@ -78,7 +78,7 @@ Maven will create fat jar with plugin code and all its dependencies.
     <build>
         <plugins>
             <plugin>
-                <groupId>com.github.souzen</groupId>
+                <groupId>org.javacentric.gjerd</groupId>
                 <artifactId>light-jpf-maven-plugin</artifactId>
                 <version>0.0.2</version>
                 <executions>
@@ -104,7 +104,7 @@ light-jpf-maven-plugin can also prepare plugins/ directory in your application.
     <build>
         <plugins>
             <plugin>
-                <groupId>com.github.souzen</groupId>
+                <groupId>org.javacentric.gjerd</groupId>
                 <artifactId>light-jpf-maven-plugin</artifactId>
                 <version>0.0.2</version>
                 <executions>

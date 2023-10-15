@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.github.souzen</groupId>
+    <groupId>org.javacentric.gjerd</groupId>
     <artifactId>light-jpf-parent</artifactId>
-    <version>0.0.7-SNAPSHOT</version>
+    <version>0.0.8-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>light-jpf-parent</name>
     <description>Lightweight Java Plugin Framework</description>
-    <url>https://github.com/souzen/light-jpf</url>
+    <url>https://github.com/gjerd/light-jpf</url>
 
     <licenses>
         <license>
@@ -107,9 +107,9 @@
     </profiles>
 
     <scm>
-        <connection>scm:git:git://github.com/souzen/light-jpf.git</connection>
-        <developerConnection>scm:git:git@github.com:souzen/light-jpf.git</developerConnection>
-        <url>http://github.com/souzen/light-jpf/tree/master</url>
+        <connection>scm:git:git://github.com/gjerd/light-jpf.git</connection>
+        <developerConnection>scm:git:git@github.com:gjerd/light-jpf.git</developerConnection>
+        <url>http://github.com/gjerd/light-jpf/tree/master</url>
         <tag>HEAD</tag>
     </scm>
 
@@ -126,10 +126,10 @@
 
     <developers>
         <developer>
-            <name>Lukasz Sosnicki</name>
-            <email>luke.sosnicki@gmail.com</email>
-            <organization>None</organization>
-            <organizationUrl>https://github.com/souzen</organizationUrl>
+            <name>Arild G. Gjerd, Lukasz Sosnicki</name>
+            <email>arild@javacentric.org</email>
+            <organization>Javacentric</organization>
+            <organizationUrl>https://github.com/gjerd</organizationUrl>
         </developer>
     </developers>
 

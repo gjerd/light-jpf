@@ -45,4 +45,9 @@ https://github.com/pf4j/pf4j-update
 ```
 https://github.com/dzikoysk/reposilite
 https://github.com/PerfectDreams/YetAnotherSimpleMavenRepo
+https://www.baeldung.com/maven-repo-github
+
+https://github.com/netmikey/mvncloner
+https://github.com/BestSolution-at/quak
+
 ```
