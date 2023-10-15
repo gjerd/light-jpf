@@ -172,6 +172,32 @@ Build and run example
 ```
 mvn clean package
 ./run
+
+Should result in the following output:
+
+09:28:13.087 [main] INFO  App - Initializing...
+09:28:13.089 [main] WARN  DirPluginRepository - Dir Plugin Repository not found /home/hectic/IdeaProjects_SPADES_3/new/light-jpf/plugins
+09:28:13.090 [main] DEBUG DirPluginRepository - Loading plugins from directory: /home/hectic/IdeaProjects_SPADES_3/new/light-jpf/examples/app/target/plugins
+09:28:13.094 [main] DEBUG BasePluginRepository - Plugin added: SecondPlugin /home/hectic/IdeaProjects_SPADES_3/new/light-jpf/examples/app/target/plugins/second-plugin
+09:28:13.094 [main] DEBUG BasePluginRepository - Plugin added: FirstPlugin /home/hectic/IdeaProjects_SPADES_3/new/light-jpf/examples/app/target/plugins/first-plugin
+09:28:13.094 [main] DEBUG BasePluginRepository - Plugin added: ThirdPlugin /home/hectic/IdeaProjects_SPADES_3/new/light-jpf/examples/app/target/plugins/third-plugin
+09:28:13.098 [main] DEBUG FirstPlugin - Load [classloader ljpf.loader.ParentLastClassLoaderFactory$ParentLastClassLoader@18eed359]
+09:28:13.098 [main] INFO  FirstPlugin - Spring version 5.2.19.RELEASE
+09:28:13.098 [main] DEBUG DefaultPluginManager - Plugin Loaded: Plugin{id='FirstPlugin', version=0.0.8-SNAPSHOT}
+09:28:13.100 [main] DEBUG SecondPlugin - Load [classloader ljpf.loader.ParentLastClassLoaderFactory$ParentLastClassLoader@23e028a9]
+09:28:13.100 [main] INFO  SecondPlugin - Spring version 5.2.19.RELEASE
+09:28:13.101 [main] DEBUG DefaultPluginManager - Plugin Loaded: Plugin{id='SecondPlugin', version=0.0.8-SNAPSHOT}
+09:28:13.101 [main] DEBUG ThirdPlugin - Load [classloader ljpf.loader.ParentLastClassLoaderFactory$ParentLastClassLoader@50b494a6]
+09:28:13.101 [main] INFO  ThirdPlugin - Hello World!
+09:28:13.101 [main] INFO  ThirdPlugin - Hello From Plugin Resource!
+09:28:13.101 [main] DEBUG DefaultPluginManager - Plugin Loaded: Plugin{id='ThirdPlugin', version=0.0.8-SNAPSHOT}
+09:28:13.101 [main] INFO  App - Shutting down...
+09:28:13.102 [main] INFO  FirstPlugin - Unload
+09:28:13.102 [main] DEBUG DefaultPluginManager - Plugin Unloaded: Plugin{id='FirstPlugin', version=0.0.8-SNAPSHOT}
+09:28:13.102 [main] INFO  SecondPlugin - Unload
+09:28:13.102 [main] DEBUG DefaultPluginManager - Plugin Unloaded: Plugin{id='SecondPlugin', version=0.0.8-SNAPSHOT}
+09:28:13.102 [main] INFO  ThirdPlugin - Unload
+09:28:13.102 [main] DEBUG DefaultPluginManager - Plugin Unloaded: Plugin{id='ThirdPlugin', version=0.0.8-SNAPSHOT}
 ```
 
 ## 6. Licence
