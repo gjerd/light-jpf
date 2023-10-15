@@ -1,4 +1,4 @@
-# Lightweight Java Plugin Framework (Fork)
+# Lightweight Plugin Framework (Fork)
 ![Release](https://badgen.net/badge/Release/0.0.8-SNAPSHOT/blue)
 [![License](https://badgen.net/badge/License/Apache&nbsp;2.0/blue)](https://opensource.org/licenses/Apache-2.0)
 
