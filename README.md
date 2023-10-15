@@ -150,6 +150,14 @@ TODO
 ## 4. Debugging
 In app create plugins dir and run or place plugins as dependencies
 
+
+
+## 5. Roadmap
+
+- [x] Updated all maven dependencies, not maven-assembly-plugin & maven-dependency-plugin
+- [ ] Make a fully working Gradle Example utilizing this framework
+- [ ] Make a Gradle plugin for distributing plugins
+
 ```xml
     <dependencies>
         <dependency>
@@ -164,7 +172,7 @@ In app create plugins dir and run or place plugins as dependencies
 
 
 
-## 5. Examples
+## 6. Examples
 See example project [here](https://github.com/souzen/lightweight-plugin-framework/tree/master/examples)
 
 Build and run example
@@ -253,7 +261,7 @@ the way the main program want - yay!
 
 
 
-## 6. Licence
+## Licence
 Copyright 2017 Luke Sosnicki, 2023- Arild G. Gjerd
 
 Licensed under the Apache License, Version 2.0 (the "License");
