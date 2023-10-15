@@ -169,7 +169,7 @@ Build and run example
 
 ```
 mvn clean package
-./run showtree
+./run tree
 
 Should result in the following output:
 
