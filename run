@@ -4,7 +4,6 @@ clear
 
 rm -rf app-0.0.8-SNAPSHOT
 unzip -qq examples/app/target/app-0.0.8-SNAPSHOT-bin.zip
-
 echo
 
 if [ "$*" == "tree" ]; then

@@ -244,7 +244,7 @@ java -classpath "$(dirname $0)/lib/*" ljpf.examples.app.App
 eg. it loads and resolves all jars inside the lib directory;
 (yes, the app's jar itself is there too, when it's done the apps class containing the main
 method is executed) - The main program loads the plugins dynamically, executing them
-on the way - bravissimo.
+on the way - yay!
  
 ```
 
