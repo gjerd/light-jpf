@@ -20,6 +20,7 @@ package ljpf.maven;
 
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;
+import org.apache.maven.plugins.annotations.Component;
 import org.apache.maven.plugins.annotations.LifecyclePhase;
 import org.apache.maven.plugins.annotations.Mojo;
 import org.apache.maven.plugins.annotations.Parameter;
@@ -27,6 +28,9 @@ import org.apache.maven.plugins.dependency.fromConfiguration.ArtifactItem;
 import org.apache.maven.plugins.dependency.fromConfiguration.UnpackMojo;
 import org.apache.maven.plugins.dependency.utils.markers.MarkerHandler;
 import org.apache.maven.plugins.dependency.utils.markers.UnpackFileMarkerHandler;
+import org.codehaus.plexus.PlexusContainer;
+import org.codehaus.plexus.archiver.UnArchiver;
+import org.codehaus.plexus.component.repository.exception.ComponentLookupException;
 
 import java.io.File;
 import java.util.List;
@@ -43,16 +47,11 @@ public class MakePluginRepositoryMojo extends UnpackMojo {
     @Parameter(defaultValue = "plugin")
     private String defaultClassifier;
 
-
     //@Parameter(defaultValue = "${plexus.container}")
     //private PlexusContainer container;
 
-    //@Component
-    //private PlexusContainer container;
-
-    //@Component
-    //private ArchiverManager archiverManager;
-
+    @Component
+    private PlexusContainer container;
 
     protected void doExecute() throws MojoExecutionException, MojoFailureException {
         if (isSkip()) {
@@ -77,81 +76,6 @@ public class MakePluginRepositoryMojo extends UnpackMojo {
         }
     }
 
-    private void unpackArtifact(ArtifactItem artifactItem)
-            throws MojoExecutionException {
-        MarkerHandler handler = new UnpackFileMarkerHandler(artifactItem, getMarkersDirectory());
-
-        unpack(artifactItem.getArtifact(), artifactItem.getType(), artifactItem.getOutputDirectory(),
-                artifactItem.getIncludes(), artifactItem.getExcludes(), artifactItem.getEncoding());
-        handler.setMarker();
-    }
-
-
-        /*
-    // ORIGINAL
-    private void unpackArtifact(ArtifactItem artifactItem)
-            throws MojoExecutionException {
-        MarkerHandler handler = new UnpackFileMarkerHandler(artifactItem, getMarkersDirectory());
-
-        unpack(artifactItem.getArtifact(), artifactItem.getType(), artifactItem.getOutputDirectory(),
-                artifactItem.getIncludes(), artifactItem.getExcludes(), artifactItem.getEncoding());
-        handler.setMarker();
-    }
-     */
-
-
-    /*
-    private void unpackArtifact(ArtifactItem artifactItem) throws MojoExecutionException {
-        MarkerHandler handler = new UnpackFileMarkerHandler(artifactItem, getMarkersDirectory());
-
-        File artifactFile = artifactItem.getArtifact().getFile();
-        File outputDirectory = artifactItem.getOutputDirectory();
-
-        // Check if artifact file is present
-        if (artifactFile == null || !artifactFile.isFile()) {
-            throw new MojoExecutionException("Artifact file is missing for: " + artifactItem.getArtifact());
-        }
-
-        try (ZipInputStream zipInputStream = new ZipInputStream(new FileInputStream(artifactFile))) {
-            ZipEntry entry;
-            byte[] buffer = new byte[2048];  // Adjust buffer size as needed
-            while ((entry = zipInputStream.getNextEntry()) != null) {
-                File outputFile = new File(outputDirectory, entry.getName());
-
-                if (entry.isDirectory()) {
-                    if (!outputFile.exists()) {
-                        if (!outputFile.mkdirs()) {
-                            throw new MojoExecutionException("Could not create directory: " + outputFile.getAbsolutePath());
-                        }
-                    }
-                } else {
-                    // Make sure all directories are created
-                    File parent = outputFile.getParentFile();
-                    if (!parent.exists()) {
-                        if (!parent.mkdirs()) {
-                            throw new MojoExecutionException("Could not create directory: " + parent.getAbsolutePath());
-                        }
-                    }
-
-                    // Write files to disk
-                    try (FileOutputStream outputStream = new FileOutputStream(outputFile)) {
-                        int len;
-                        while ((len = zipInputStream.read(buffer)) > 0) {
-                            outputStream.write(buffer, 0, len);
-                        }
-                    }
-                }
-            }
-        } catch (IOException e) {
-            throw new MojoExecutionException("Error unpacking artifact: " + artifactItem.getArtifact(), e);
-        }
-
-        handler.setMarker();  // Indicate this artifact is processed
-    }
-
-     */
-
-    /*
     private void unpackArtifact(ArtifactItem artifactItem) throws MojoExecutionException {
         MarkerHandler handler = new UnpackFileMarkerHandler(artifactItem, getMarkersDirectory());
         File artifactFile = artifactItem.getArtifact().getFile();
@@ -181,46 +105,5 @@ public class MakePluginRepositoryMojo extends UnpackMojo {
 
         handler.setMarker();
     }
-
-     */
-
-    /*
-    private void unpackArtifact(ArtifactItem artifactItem) throws MojoExecutionException {
-        MarkerHandler handler = new UnpackFileMarkerHandler(artifactItem, getMarkersDirectory());
-        File artifactFile = artifactItem.getArtifact().getFile();
-
-        if (artifactFile == null || !artifactFile.exists()) {
-            throw new MojoExecutionException("Artifact file does not exist: " + artifactItem.getArtifact());
-        }
-
-        // Log for debugging: to verify if this method processes all necessary artifacts
-        getLog().info("Unpacking: " + artifactFile.getName());
-
-        try {
-            // Obtain the appropriate unarchiver. JARs are essentially ZIP files.
-            UnArchiver unArchiver;
-            if (artifactFile.getName().endsWith(".jar")) {
-                unArchiver = (ZipUnArchiver) container.lookup(UnArchiver.class, "zip");
-            } else {
-                // For other types, you could extend the logic to handle different file types.
-                unArchiver = container.lookup(UnArchiver.class, "tar");
-            }
-
-            unArchiver.setSourceFile(artifactFile);
-            unArchiver.setDestDirectory(artifactItem.getOutputDirectory());
-
-            // Set additional options on the unArchiver here, if needed.
-
-            // Perform the extraction
-            unArchiver.extract();
-
-        } catch (ArchiverException | ComponentLookupException e) {
-            throw new MojoExecutionException("Error unpacking file: " + artifactFile + " to: " + artifactItem.getOutputDirectory(), e);
-        }
-
-        handler.setMarker();  // Mark this artifact as processed
-    }
-
-     */
 
 }
