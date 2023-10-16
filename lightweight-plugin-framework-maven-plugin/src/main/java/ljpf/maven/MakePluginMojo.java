@@ -38,6 +38,7 @@ import org.apache.maven.project.MavenProjectHelper;
 import java.io.File;
 import java.nio.file.attribute.FileTime;
 import java.time.Instant;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -114,24 +115,21 @@ public class MakePluginMojo extends AbstractAssemblyMojo {
             }
 
             for (final String format : effectiveFormats) {
+                // Create an Instant object, representing the current moment in time.
 
+                Instant now = Instant.now();
+                FileTime fileTime = FileTime.from(now);
 
-                // 3.0.0
-                final File destFile = assemblyArchiver.createArchive(assembly, fullName, format, this, true, getMergeManifestMode());
-
-
-                // New for 3.6.0
-                //Instant now = Instant.now(); // or another Instant object
-                //FileTime fileTime = FileTime.from(now);
-                //final File destFile = assemblyArchiver.createArchive(assembly, fullName, format, this, true, getMergeManifestMode(), fileTime);
-
+                // Now, you can use fileTime in your method call.
+                final File destFile = assemblyArchiver.createArchive(assembly, fullName, format, this, true, getMergeManifestMode(), fileTime);
                 final MavenProject project = getProject();
                 final String type = project.getArtifact().getType();
 
                 if (attach && destFile.isFile()) {
-                    if (isAssemblyIdAppended()) {
-                        projectHelper.attachArtifact(project, format, assembly.getId(), destFile);
-                    } else if (!"pom".equals(type) && format.equals(type)) {
+                    //if (isAssemblyIdAppended()) {
+                    //    projectHelper.attachArtifact(project, format, assembly.getId(), destFile);
+                    //} else if (!"pom".equals(type) && format.equals(type)) {
+                    if (!"pom".equals(type) && format.equals(type)) {
                         final File existingFile = project.getArtifact().getFile();
                         if ((existingFile != null) && existingFile.exists()) {
                             getLog().warn("Replacing pre-existing project main-artifact file: " + existingFile
