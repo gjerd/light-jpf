@@ -144,9 +144,6 @@ TODO Loads plugins from java classpath
 #### MultiPluginRepository
 TODO Enables mixing multiple plugin reposiotories
 
-#### Update lightweight-plugin-framework-maven-plugin to use maven-assembly-plugin & maven-dependency-plugin version 3.6.0
-TODO
-
 ## 4. Roadmap
 
 - [x] Updated all maven dependencies, not maven-assembly-plugin & maven-dependency-plugin
