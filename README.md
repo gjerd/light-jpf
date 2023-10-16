@@ -150,6 +150,7 @@ TODO
 ## 4. Roadmap
 
 - [x] Updated all maven dependencies, not maven-assembly-plugin & maven-dependency-plugin
+- [x] Updated code to work with maven-assembly-plugin & maven-dependency-plugin version 3.6.0
 - [ ] Make a fully working Gradle Example utilizing this framework
 - [ ] Make a Gradle plugin for distributing plugins
 
