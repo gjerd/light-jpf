@@ -36,6 +36,8 @@ import org.apache.maven.project.MavenProject;
 import org.apache.maven.project.MavenProjectHelper;
 
 import java.io.File;
+import java.nio.file.attribute.FileTime;
+import java.time.Instant;
 import java.util.List;
 
 /**
@@ -112,7 +114,16 @@ public class MakePluginMojo extends AbstractAssemblyMojo {
             }
 
             for (final String format : effectiveFormats) {
+
+
+                // 3.0.0
                 final File destFile = assemblyArchiver.createArchive(assembly, fullName, format, this, true, getMergeManifestMode());
+
+
+                // New for 3.6.0
+                //Instant now = Instant.now(); // or another Instant object
+                //FileTime fileTime = FileTime.from(now);
+                //final File destFile = assemblyArchiver.createArchive(assembly, fullName, format, this, true, getMergeManifestMode(), fileTime);
 
                 final MavenProject project = getProject();
                 final String type = project.getArtifact().getType();
