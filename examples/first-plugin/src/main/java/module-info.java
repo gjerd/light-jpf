@@ -1,5 +1,5 @@
 module light.jpf.examples.first.plugin {
-    requires slf4j.api;
+    requires org.slf4j;
     requires spring.core;
     requires light.jpf.examples.common.api;
 }

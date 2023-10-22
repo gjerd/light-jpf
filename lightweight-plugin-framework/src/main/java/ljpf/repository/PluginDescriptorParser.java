@@ -19,8 +19,6 @@ package ljpf.repository;
 import ljpf.PluginDescriptor;
 import ljpf.PluginException;
 import ljpf.versions.Version;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -31,6 +29,9 @@ import java.util.Properties;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 import java.util.regex.Pattern;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Created by souzen on 25.03.2017.

@@ -1,4 +1,4 @@
 module light.jpf.examples.third.plugin {
-    requires slf4j.api;
+    requires org.slf4j;
     requires light.jpf.examples.common.api;
 }

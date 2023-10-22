@@ -1,6 +1,6 @@
 module light.jpf {
-    requires slf4j.api;
     requires commons.lang3;
+    requires org.slf4j;
 
     exports ljpf;
     exports ljpf.loader;

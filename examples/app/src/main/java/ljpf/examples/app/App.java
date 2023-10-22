@@ -27,6 +27,8 @@ import ljpf.repository.MultiPluginRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.File;
+
 /**
  * Created by souzen on 29.03.2017.
  */
@@ -39,10 +41,21 @@ public class App {
     public void init() {
         LOG.info("Initializing...");
 
+        String pluginRepository1 =  System.getProperty("user.home") +
+                File.separator + "spades" +
+                File.separator + "gradle-plugin-app" +
+                File.separator + "plugins";
+
+        // Relative to project-directory
+        String pluginRepository2 =  "plugins";
+
+        String pluginRepository3 =  "examples/app/target/plugins";
+
         MultiPluginRepository pluginRepository = new MultiPluginRepository(
                 new ClasspathPluginRepository(),
-                new DirPluginRepository("plugins"),
-                new DirPluginRepository("examples/app/target/plugins")
+                //new DirPluginRepository(pluginRepository1),
+                new DirPluginRepository(pluginRepository2),
+                new DirPluginRepository(pluginRepository3)
         );
 
         PluginClassLoaderFactory classLoaderFactory = new ParentLastClassLoaderFactory();
