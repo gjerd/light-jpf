@@ -1,4 +1,0 @@
-id=SecondPlugin
-version=0.0.8-SNAPSHOT
-pluginClass=ljpf.examples.plugin.SecondPlugin
-description=Second Example
