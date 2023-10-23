@@ -33,7 +33,7 @@ import java.util.Properties;
  */
 public class ThirdPlugin implements Plugin {
 
-    private static final Logger LOG = LoggerFactory.getLogger(ThirdPlugin.class.getSimpleName());
+    private static final Logger log = LoggerFactory.getLogger(ThirdPlugin.class.getSimpleName());
 
     private ExampleConfig config;
 
@@ -46,10 +46,10 @@ public class ThirdPlugin implements Plugin {
 
     @Override
     public void load() {
-        LOG.debug("Load [classloader {}]", this.getClass().getClassLoader());
+        log.debug("Load [classloader {}]", this.getClass().getClassLoader());
 
         // Greetings from application
-        LOG.info("Hello {}!", config.getValue());
+        log.info("Hello {}!", config.getValue());
 
         // Greetings from plugin local resource
         Properties properties = new Properties();
@@ -57,15 +57,15 @@ public class ThirdPlugin implements Plugin {
             Path path = Paths.get(config.getPluginWorkDir(), "additional.properties");
             properties.load(new FileInputStream(path.toFile()));
 
-            LOG.info("Hello {}!", properties.getProperty("hello.property"));
+            log.info("Hello {}!", properties.getProperty("hello.property"));
 
         } catch (IOException e) {
-            LOG.error("Failed to load properties", e);
+            log.error("Failed to load properties", e);
         }
     }
 
     @Override
     public void unload() {
-        LOG.info("Unload");
+        log.info("Unload");
     }
 }

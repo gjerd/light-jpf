@@ -26,16 +26,16 @@ import org.springframework.core.SpringVersion;
  */
 public class SecondPlugin implements Plugin {
 
-    private static final Logger LOG = LoggerFactory.getLogger(SecondPlugin.class.getSimpleName());
+    private static final Logger log = LoggerFactory.getLogger(SecondPlugin.class.getSimpleName());
 
     @Override
     public void load() {
-        LOG.debug("Load [classloader {}]", getClass().getClassLoader());
-        LOG.info("Spring version {}", SpringVersion.getVersion());
+        log.debug("Load [classloader {}]", getClass().getClassLoader());
+        log.info("Spring version {}", SpringVersion.getVersion());
     }
 
     @Override
     public void unload() {
-        LOG.info("Unload");
+        log.info("Unload");
     }
 }

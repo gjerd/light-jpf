@@ -24,22 +24,20 @@ import ljpf.loader.ParentLastClassLoaderFactory;
 import ljpf.repository.ClasspathPluginRepository;
 import ljpf.repository.DirPluginRepository;
 import ljpf.repository.MultiPluginRepository;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.io.File;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * Created by souzen on 29.03.2017.
  */
+
+@Slf4j
 public class App {
-
-    private static final Logger LOG = LoggerFactory.getLogger(App.class.getSimpleName());
-
     private PluginManager pluginManager;
 
     public void init() {
-        LOG.info("Initializing...");
+        log.info("Initializing, using Lombok...");
 
         String pluginRepository1 =  System.getProperty("user.home") +
                 File.separator + "spades" +
@@ -71,7 +69,7 @@ public class App {
     }
 
     public void shutdown() {
-        LOG.info("Shutting down...");
+        log.info("Shutting down...");
         pluginManager.unloadAll();
     }
 
