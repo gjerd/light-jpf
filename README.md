@@ -218,11 +218,11 @@ app-0.0.8-SNAPSHOT
 11 directories, 23 files
 
 10:22:40.648 [main] INFO  ljpf.examples.app.App - Initializing, using Lombok...
-10:22:40.652 [main] WARN  DirPluginRepository - Dir Plugin Repository not found /home/user/Sources/new/lightweight-plugin-framework/plugins
-10:22:40.652 [main] DEBUG DirPluginRepository - Loading plugins from directory: /home/user/Sources/new/lightweight-plugin-framework/examples/app/target/plugins
-10:22:40.656 [main] DEBUG BasePluginRepository - Plugin added: SecondPlugin /home/user/Sources/new/lightweight-plugin-framework/examples/app/target/plugins/second-plugin
-10:22:40.656 [main] DEBUG BasePluginRepository - Plugin added: FirstPlugin /home/user/Sources/new/lightweight-plugin-framework/examples/app/target/plugins/first-plugin
-10:22:40.656 [main] DEBUG BasePluginRepository - Plugin added: ThirdPlugin /home/user/Sources/new/lightweight-plugin-framework/examples/app/target/plugins/third-plugin
+10:22:40.652 [main] WARN  DirPluginRepository - Dir Plugin Repository not found /home/user/Sources/lightweight-plugin-framework/plugins
+10:22:40.652 [main] DEBUG DirPluginRepository - Loading plugins from directory: /home/user/Sources/lightweight-plugin-framework/examples/app/target/plugins
+10:22:40.656 [main] DEBUG BasePluginRepository - Plugin added: SecondPlugin /home/user/Sources/lightweight-plugin-framework/examples/app/target/plugins/second-plugin
+10:22:40.656 [main] DEBUG BasePluginRepository - Plugin added: FirstPlugin /home/user/Sources/lightweight-plugin-framework/examples/app/target/plugins/first-plugin
+10:22:40.656 [main] DEBUG BasePluginRepository - Plugin added: ThirdPlugin /home/user/Sources/lightweight-plugin-framework/examples/app/target/plugins/third-plugin
 10:22:40.659 [main] DEBUG FirstPlugin - Load [classloader ljpf.loader.ParentLastClassLoaderFactory$ParentLastClassLoader@45afc369]
 10:22:40.660 [main] INFO  FirstPlugin - Spring version 5.2.19.RELEASE
 10:22:40.660 [main] DEBUG DefaultPluginManager - Plugin Loaded: Plugin{id='FirstPlugin', version=0.0.8-SNAPSHOT}
