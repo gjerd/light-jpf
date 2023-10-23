@@ -30,6 +30,7 @@ https://hdecarne-github.github.io/gradle-java-plugin/
 MAVEN FROM GRADLE:
 
 * LATEST *
+https://maven.apache.org/guides/plugin/guide-java-plugin-development.html
 https://maven.apache.org/ref/3.9.5/maven-embedder/index.html
 https://maven.apache.org/shared/maven-invoker/index.html
 
