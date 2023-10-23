@@ -188,9 +188,10 @@ app-0.0.8-SNAPSHOT
 │   ├── common-api-0.0.8-SNAPSHOT.jar
 │   ├── commons-lang3-3.5.jar
 │   ├── lightweight-plugin-framework-0.0.8-SNAPSHOT.jar
-│   ├── logback-classic-1.2.9.jar
-│   ├── logback-core-1.2.9.jar
-│   └── slf4j-api-1.7.25.jar
+│   ├── logback-classic-1.4.11.jar
+│   ├── logback-core-1.4.11.jar
+│   ├── lombok-1.18.30.jar
+│   └── slf4j-api-2.0.9.jar
 ├── plugins
 │   ├── first-plugin
 │   │   ├── first.plugin
@@ -214,32 +215,31 @@ app-0.0.8-SNAPSHOT
 ├── start
 └── start.bat
 
-11 directories, 22 files
+11 directories, 23 files
 
-09:28:13.087 [main] INFO  App - Initializing...
-
-14:09:01.029 [main] WARN  DirPluginRepository - Dir Plugin Repository not found /home/user/Sources/lightweight-plugin-framework/plugins
-14:09:01.030 [main] DEBUG DirPluginRepository - Loading plugins from directory: /home/user/Sources/lightweight-plugin-framework/examples/app/target/plugins
-14:09:01.034 [main] DEBUG BasePluginRepository - Plugin added: SecondPlugin /home/user/Sources/lightweight-plugin-framework/examples/app/target/plugins/second-plugin
-14:09:01.034 [main] DEBUG BasePluginRepository - Plugin added: FirstPlugin /home/user/Sources/lightweight-plugin-framework/examples/app/target/plugins/first-plugin
-14:09:01.034 [main] DEBUG BasePluginRepository - Plugin added: ThirdPlugin /home/user/Sources/lightweight-plugin-framework/examples/app/target/plugins/third-plugin
-09:28:13.098 [main] DEBUG FirstPlugin - Load [classloader ljpf.loader.ParentLastClassLoaderFactory$ParentLastClassLoader@18eed359]
-09:28:13.098 [main] INFO  FirstPlugin - Spring version 5.2.19.RELEASE
-09:28:13.098 [main] DEBUG DefaultPluginManager - Plugin Loaded: Plugin{id='FirstPlugin', version=0.0.8-SNAPSHOT}
-09:28:13.100 [main] DEBUG SecondPlugin - Load [classloader ljpf.loader.ParentLastClassLoaderFactory$ParentLastClassLoader@23e028a9]
-09:28:13.100 [main] INFO  SecondPlugin - Spring version 5.2.19.RELEASE
-09:28:13.101 [main] DEBUG DefaultPluginManager - Plugin Loaded: Plugin{id='SecondPlugin', version=0.0.8-SNAPSHOT}
-09:28:13.101 [main] DEBUG ThirdPlugin - Load [classloader ljpf.loader.ParentLastClassLoaderFactory$ParentLastClassLoader@50b494a6]
-09:28:13.101 [main] INFO  ThirdPlugin - Hello World!
-09:28:13.101 [main] INFO  ThirdPlugin - Hello From Plugin Resource!
-09:28:13.101 [main] DEBUG DefaultPluginManager - Plugin Loaded: Plugin{id='ThirdPlugin', version=0.0.8-SNAPSHOT}
-09:28:13.101 [main] INFO  App - Shutting down...
-09:28:13.102 [main] INFO  FirstPlugin - Unload
-09:28:13.102 [main] DEBUG DefaultPluginManager - Plugin Unloaded: Plugin{id='FirstPlugin', version=0.0.8-SNAPSHOT}
-09:28:13.102 [main] INFO  SecondPlugin - Unload
-09:28:13.102 [main] DEBUG DefaultPluginManager - Plugin Unloaded: Plugin{id='SecondPlugin', version=0.0.8-SNAPSHOT}
-09:28:13.102 [main] INFO  ThirdPlugin - Unload
-09:28:13.102 [main] DEBUG DefaultPluginManager - Plugin Unloaded: Plugin{id='ThirdPlugin', version=0.0.8-SNAPSHOT}
+10:22:40.648 [main] INFO  ljpf.examples.app.App - Initializing, using Lombok...
+10:22:40.652 [main] WARN  DirPluginRepository - Dir Plugin Repository not found /home/user/Sources/new/lightweight-plugin-framework/plugins
+10:22:40.652 [main] DEBUG DirPluginRepository - Loading plugins from directory: /home/user/Sources/new/lightweight-plugin-framework/examples/app/target/plugins
+10:22:40.656 [main] DEBUG BasePluginRepository - Plugin added: SecondPlugin /home/user/Sources/new/lightweight-plugin-framework/examples/app/target/plugins/second-plugin
+10:22:40.656 [main] DEBUG BasePluginRepository - Plugin added: FirstPlugin /home/user/Sources/new/lightweight-plugin-framework/examples/app/target/plugins/first-plugin
+10:22:40.656 [main] DEBUG BasePluginRepository - Plugin added: ThirdPlugin /home/user/Sources/new/lightweight-plugin-framework/examples/app/target/plugins/third-plugin
+10:22:40.659 [main] DEBUG FirstPlugin - Load [classloader ljpf.loader.ParentLastClassLoaderFactory$ParentLastClassLoader@45afc369]
+10:22:40.660 [main] INFO  FirstPlugin - Spring version 5.2.19.RELEASE
+10:22:40.660 [main] DEBUG DefaultPluginManager - Plugin Loaded: Plugin{id='FirstPlugin', version=0.0.8-SNAPSHOT}
+10:22:40.661 [main] DEBUG SecondPlugin - Load [classloader ljpf.loader.ParentLastClassLoaderFactory$ParentLastClassLoader@1176dcec]
+10:22:40.661 [main] INFO  SecondPlugin - Spring version 5.2.19.RELEASE
+10:22:40.661 [main] DEBUG DefaultPluginManager - Plugin Loaded: Plugin{id='SecondPlugin', version=0.0.8-SNAPSHOT}
+10:22:40.662 [main] DEBUG ThirdPlugin - Load [classloader ljpf.loader.ParentLastClassLoaderFactory$ParentLastClassLoader@6b67034]
+10:22:40.662 [main] INFO  ThirdPlugin - Hello World!
+10:22:40.662 [main] INFO  ThirdPlugin - Hello From Plugin Resource!
+10:22:40.662 [main] DEBUG DefaultPluginManager - Plugin Loaded: Plugin{id='ThirdPlugin', version=0.0.8-SNAPSHOT}
+10:22:40.662 [main] INFO  ljpf.examples.app.App - Shutting down...
+10:22:40.662 [main] INFO  FirstPlugin - Unload
+10:22:40.662 [main] DEBUG DefaultPluginManager - Plugin Unloaded: Plugin{id='FirstPlugin', version=0.0.8-SNAPSHOT}
+10:22:40.662 [main] INFO  SecondPlugin - Unload
+10:22:40.662 [main] DEBUG DefaultPluginManager - Plugin Unloaded: Plugin{id='SecondPlugin', version=0.0.8-SNAPSHOT}
+10:22:40.662 [main] INFO  ThirdPlugin - Unload
+10:22:40.662 [main] DEBUG DefaultPluginManager - Plugin Unloaded: Plugin{id='ThirdPlugin', version=0.0.8-SNAPSHOT}
 
 -------------------------------
 
